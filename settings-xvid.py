@@ -2,7 +2,7 @@
 #--automatically built--
 
 adm = Avidemux()
-adm.videoCodec("xvid4", "params=2PASSBITRATE=3500", "profile=244", "rdMode=3", "motionEstimation=3", "cqmMode=0", "arMode=1", "maxBFrame=2", "maxKeyFrameInterval=200", "nbThreads=99", "qMin=2", "qMax=25", "rdOnBFrame=True"
+adm.videoCodec("xvid4", "params=2PASSBITRATE=100", "profile=244", "rdMode=3", "motionEstimation=3", "cqmMode=0", "arMode=1", "maxBFrame=2", "maxKeyFrameInterval=200", "nbThreads=99", "qMin=2", "qMax=25", "rdOnBFrame=True"
 , "hqAcPred=True", "optimizeChrome=True", "trellis=True", "useXvidFCC=False")
 adm.addVideoFilter("resampleFps", "mode=0", "newFpsDen=1000", "newFpsNum=10000")
 adm.audioClearTracks()
