@@ -1,13 +1,11 @@
 #!/bin/bash
 
-IFS=$(echo -en "\n\b")
-
-if [ -z "$1" ]; then
+if [ -z $1 ]; then
   echo "No argument supplied"
   exit 1
 fi
 
-if [[ "$1" != "xvid" && "$1" != "x264" ]]; then
+if [[ $1 != "xvid" && $1 != "x264" ]]; then
   echo "You must pass the codec as an argument to the script, e.g. either 'xvid' ot 'x264'"
   exit 128
 fi
