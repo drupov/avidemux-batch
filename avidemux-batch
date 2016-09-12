@@ -15,5 +15,5 @@ fi
 mkdir -p dest-$1
 
 for FIL in `ls *mp4 | sort` ; do
-  yes | avidemux3_cli --load "$FIL" --run settings-$1.py --save dest-$1/${FIL%.*}.avi --quit
+  yes | avidemux3_cli --load "$FIL" --run settings/settings-$1.py --save dest-$1/${FIL%.*}.avi --quit
 done
