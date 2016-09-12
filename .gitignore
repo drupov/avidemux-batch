@@ -1,3 +1,5 @@
 src/*
 dest/*
 !dest/README.md
+*.mp4
+*.avi
