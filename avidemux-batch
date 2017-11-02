@@ -15,8 +15,7 @@ mkdir -p dest-$1
 for FIL in `ls *mp4 | sort` ; do
   if [ $1 == "xvid" ]; then
     yes | avidemux3_cli --load "$FIL" --run settings/settings-$1.py --save dest-$1/${FIL%.*}.avi --quit
-  fi
-  if [ $1 == "x264" ]; then
+  elif [ $1 == "x264" ]; then
     yes | avidemux3_cli --load "$FIL" --run settings/settings-$1.py --save dest-$1/${FIL%.*}.mkv --quit
   fi
 done
